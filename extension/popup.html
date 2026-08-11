@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>守拙 Capture</title>
+    <style>
+      body { width: 280px; margin: 0; padding: 16px; color: #202124;
+        font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      h1 { margin: 0 0 12px; font-size: 17px; }
+      .row { margin: 8px 0; }
+      .label { color: #5f6368; }
+      .value { font-weight: 600; overflow-wrap: anywhere; }
+      .ok { color: #137333; }
+      .bad { color: #b3261e; }
+      small { display: block; margin-top: 12px; color: #5f6368; }
+    </style>
+  </head>
+  <body>
+    <h1>守拙 Capture</h1>
+    <div class="row"><span class="label">状态：</span><span id="stage" class="value">检查中</span></div>
+    <div class="row"><span class="label">详情：</span><span id="error" class="value">无</span></div>
+    <small>扩展由命令行工具自动驱动，无需手动操作。</small>
+    <script src="popup.js"></script>
+  </body>
+</html>
