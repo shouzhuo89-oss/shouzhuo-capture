@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "守拙 Capture 桥",
+  "version": "2.0.0",
+  "description": "在已登录的腾讯元宝页面内解析视频号链接，把视频源地址回传给本地下载程序。",
+  "permissions": [
+    "scripting",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://yuanbao.tencent.com/*",
+    "https://weixin.qq.com/*",
+    "https://channels.weixin.qq.com/*",
+    "https://*.weixin.qq.com/*",
+    "https://*.qq.com/*",
+    "https://*.qpic.cn/*",
+    "https://*.gtimg.com/*",
+    "http://127.0.0.1/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_title": "守拙 Capture 桥",
+    "default_popup": "popup.html"
+  }
+}
