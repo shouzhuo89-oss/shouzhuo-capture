@@ -1,0 +1,4 @@
+interface:
+  display_name: "守拙 Capture"
+  short_description: "视频号视频自动下载"
+  default_prompt: "Use $shouzhuo-capture to download WeChat Channels videos."
